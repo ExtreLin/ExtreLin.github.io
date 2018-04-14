@@ -98,8 +98,7 @@ friends: [
     },{
         title: "CORK",
         href: "https://github.com/gilbo/cork"
-    }
-    #,{
+    #},{
     #    title: "Luke 的自留地",
     #    href: "http://hmqk1995.github.io"
     #},{
