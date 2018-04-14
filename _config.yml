@@ -67,7 +67,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "一生三角网格，<br>数字有时候很美丽"
+sidebar-about-description: "三角网格，<br>准确，严谨"
 sidebar-avatar: /img/avatar-extrelin.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
