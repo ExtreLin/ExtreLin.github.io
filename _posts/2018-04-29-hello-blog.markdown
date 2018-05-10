@@ -19,7 +19,7 @@ tags:
 本着开源的精神，所有打算开个自己的blog来写写平时遇到的问题。
 
 
-看到大佬们都是用[GitHub Pages](https://pages.github.com/)来做自己的blog主页的，无意中发现[HUX BLOG](https://hux.github.com/hux.github.io)的blog非常漂亮，果断fork了他的github项目，将其修改为自己的blog。
+看到大佬们都是用[GitHub Pages](https://pages.github.com/)来做自己的blog主页的，无意中发现[HUX BLOG](https://hux.github.com/hux.github.io)非常漂亮，果断fork了他的github项目，将其修改为自己的blog。
 
 ---
 
