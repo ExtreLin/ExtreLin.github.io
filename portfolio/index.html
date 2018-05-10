@@ -1,64 +1,103 @@
 ---
-title: Portfolio
+title: "Portfolio"
 layout: default
+description: "What I did"
+header-img: "img/portfolio-bg.jpg"
 ---
 
-<!DOCTYPE html>
-<html class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>ExtreLin - Timeline</title>
-		<link rel="stylesheet" type="text/css" href="css/timeline.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container" style="margin:0;padding:0;width:100%;">
-			<header>
-				<img width="175" height="175" style="border-radius:50%;" src="/img/avatar-extrelin.jpg">
-				<h1>ExtreLin</h1>
-			</header>
-			<div class="main">
-				<ul class="cbp_tmtimeline">
-					<li>
-						<div class="cbp_tmlabel">
-							<h2 id="boxoffice">EpDoctor</h2>
-							<time>2018.04</time>
-							<img src="images/work-EpDoctor.jpg">
-							<ul>
-								<li>
-									EpDoctor 是一款专门针对鞋模的修复软件，主要处理<a href="http://www.rhino3d.com">犀牛</a>设计的鞋模导出为stl出现的各种几何错误和拓扑错误的问题。<br>提供的一键“水密”功能有效提高效率。(在未用软件之前设计师将花费数十个小时用<a href = "http://www.materialise.com/en/software">magics</a>去修复模型，一键水密功能将只要数十几分钟甚至几分钟就能完成工作。)
-								</li>
-								<li class="skill">
-									<span class="cbp_tmicon-phone"></span>
-									<span><b>C++</b></span>
-									<span class="i-react"></span>
-									<span class="link"><a target="_blank" href="http://piaofang.wepiao.com">视频</a></span>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="cbp_tmlabel">
-							<h2 id="boxoffice">Polydevs</h2>
-							<time>2017.05</time>
-							<img src="images/work-polydevs.jpg">
-							<ul>
-								<li>
-									Polydevs is professional data preparation software for 3d printing.To help user prepare the print, Polydevs provides the features for viewing, editing, repairing, and analyzing the models.
-								</li>
-								<li class="skill">
-									<span class ="cbp_tmicon-phone"></span>
-									<span><b>C++</b></span>
-									<span class="i-react"></span>
-									<span class="link"><a target="_blank" href="http://polydevs.cn">官网</a></span>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</body>
-</html>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<head>
+<style type="text/css">
+p {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+</style>
+</head>
+
+<div class="container">
+
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <div class = "panel panel-default">   
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>项目</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-12 center">
+                                    <img src="images/work-EpDoctor.jpg" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-8 col-xs-12 post-container">
+
+                                    <p><b>EpDoctor</b></p>
+
+                                    <p><i>开发工具：C++</i></p>
+
+                                    <p>EpDoctor 是一款专门针对鞋模的修复软件，主要处理<a href="http://www.rhino3d.com">犀牛</a>设计的鞋模导出为stl出现的各种几何错误和拓扑错误的问题。<br>提供的一键“水密”功能有效提高效率。(在未用软件之前设计师将花费数十个小时用<a href = "http://www.materialise.com/en/software">magics</a>去修复模型，一键水密功能将只要数十几分钟甚至几分钟就能完成工作。)</p>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Handle Language Change -->
+
+<script type="text/javascript">
+
+    var $zh = document.querySelector(".zh");
+
+    var $en = document.querySelector(".en");
+
+    function onLanChange(index){
+
+        if(index == 0){
+
+            $zh.style.display = "block";
+
+            $en.style.display = "none";
+
+        }else{
+
+            $en.style.display = "block";
+
+            $zh.style.display = "none";
+
+        }
+
+    }
+
+    onLanChange(0);
+
+</script>
