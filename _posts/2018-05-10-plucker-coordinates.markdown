@@ -4,7 +4,7 @@ title:      "不寻常的坐标系 ---- Plücker coordinates"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2018-05-10 12:00:00
 author:     "ExreLin"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-plucker-bg.jpg"
 catalog: true
 tags:
     - 数学 
