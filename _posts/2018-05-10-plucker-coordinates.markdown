@@ -28,9 +28,14 @@ tags:
 
 普吕克坐标系最常见的两个操作是 join 和 meet。join表示两个元素组成新的元素，meet表示两个元素相交出的元素。比如point join point 得到 line ，point join line 得到 plane ，line meet line 得到 point ，line  meet plane 得到point。简单直接上手，后续就围绕着这几个操作进行分析。
 
->"point join point "
+>point join point
 
 我们定义<b>线</b>为：
 ![线的定义](/img/in-post/plucker/line.png)
-p01,p02...之类的怎么来的呢？假设这条线段上面有两个点(x0:x1:x2:x3)和(x0:y1:y2:y3)，我们将以下面的规制定义pij：
+p01,p02...之类的怎么来的呢？假设这条线段上面有两个点(x0:x1:x2:x3)和(x0:y1:y2:y3)，我们将以下面的规则定义pij：
 ![pij的定义](/img/in-post/plucker/pij.jpg)
+为什么只取这6个数呢？因为pii = 0 并且 pij = -pji，所以取6个数就能代表整个矩阵。
+以两个点得出线的操作称为<b>point join point</b>。
+
+>point join line 
+
