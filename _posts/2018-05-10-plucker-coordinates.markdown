@@ -33,4 +33,4 @@ tags:
 我们定义<b>线</b>为：
 ![线的定义](/img/in-post/plucker/line.png)
 p01,p02...之类的怎么来的呢？假设这条线段上面有两个点(x0:x1:x2:x3)和(x0:y1:y2:y3)，我们将以下面的规制定义pij：
-![pij的定义](/img/in-post/plucker/pij.png)
+![pij的定义](/img/in-post/plucker/pij.jpg)
