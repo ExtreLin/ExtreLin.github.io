@@ -21,6 +21,16 @@ tags:
 # 正文
 
 首先来理解下点在齐次坐标系下的直观意义。将三维退化为二维更好理解。
-![点的齐次理解](/img/in-post/post-plucker-point.jpg)
+![点的齐次理解](/img/in-post/plucker/post-plucker-point.jpg)
 如上图所示，图中的点是线和平面的交点，换种思想就是说线上的所有点沿着线的方向进行投影，得到的永远是图中所示的点，则这条线就是这个点的齐次方程。
 
+同样我们表示一个三维点在普吕克坐标系下为表示为(x0:x1:x2:x3)。x0为齐次坐标，x1，x2，x3分别代表三维中的x，y，z。
+
+普吕克坐标系最常见的两个操作是 join 和 meet。join表示两个元素组成新的元素，meet表示两个元素相交出的元素。比如point join point 得到 line ，point join line 得到 plane ，line meet line 得到 point ，line  meet plane 得到point。简单直接上手，后续就围绕着这几个操作进行分析。
+
+>"point join point "
+
+我们定义<b>线</b>为：
+![线的定义](/img/in-post/plucker/line.png)
+p01,p02...之类的怎么来的呢？假设这条线段上面有两个点(x0:x1:x2:x3)和(x0:y1:y2:y3)，我们将以下面的规制定义pij：
+![pij的定义](/img/in-post/plucker/pij.png)
