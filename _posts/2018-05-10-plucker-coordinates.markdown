@@ -12,13 +12,6 @@ tags:
 
 > “抛开常见的三维坐标系. ”
 
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-$$\frac{1}{2x+1} , {{1} \over {2x+1}}.$$
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
 # 前言
 
 最近在整理代码，偶然看到以前用了[普吕克坐标系](https://en.wikipedia.org/wiki/Plücker_coordinates)来处理元素相交问题。回头看，已经全部看不懂了，所以打算写个博客来记录普吕克坐标系的用法。
