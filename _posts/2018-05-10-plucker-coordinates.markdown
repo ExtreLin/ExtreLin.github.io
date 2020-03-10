@@ -35,7 +35,7 @@ x<sup>0</sup>为齐次坐标，x<sup>1</sup>，x<sup>2</sup>，x<sup>3</sup>分�
 <center>(p<sup>01</sup>:p<sup>02</sup>:p<sup>03</sup>:p<sup>23</sup>:p<sup>31</sup>:p<sup>13</sup>)</center>
 
 p<sup>01</sup>,p<sup>02</sup>...之类的怎么来的呢？假设这条线段上面有两个点(x<sup>0</sup>:x<sup>1</sup>:x<sup>2</sup>:x<sup>3</sup>)和(y<sup>0</sup>:y<sup>1</sup>:y<sup>2</sup>:y<sup>3</sup>)，我们将以下面的规则定义p<sup>ij</sup>:<br>
-<div align=center><img src="http://latex.codecogs.com/gif.latex?\\p_{ij}=\begin{vmatrix}x_{i}&y_{i}\\\x_{j}&y_{j}\end{vmatrix}=x_{i}y_{j}-x_{j}y_{i}"\></div><br>
+<div align=center><img src="http://latex.codecogs.com/gif.latex?\\p_{ij}=\begin{vmatrix}x_{i}&y_{i}\\x_{j}&y_{j}\end{vmatrix}=x_{i}y_{j}-x_{j}y_{i}"\></div><br>
 为什么只取这6个数呢？因为p<sup>ii</sup> = 0 并且 p<sup>ij</sup> = -p<sup>ji</sup>，所以取6个数就能代表整个矩阵。
 以两个点得出线的操作称为<b>point join point</b>。<br>
 -----这么理解是不是很复杂，那么我介绍一种简单的理解，上面的线的表达式可以退化为(<b>d</b>:<b>m</b>)，假设直线上有两个点p<sub>1</sub>和p<sub>2</sub>则<b>d</b> = p<sub>2</sub> - p<sub>1</sub>, <b>m</b> =  p<sub>1</sub> x p<sub>2</sub>。将 p<sub>1</sub>和p<sub>2</sub> 看作从(0,0,0)出发的两条线段。这样理解<b>d</b>可以筛选出系列的线段，可以看作绕着原点，方向为朝向屏幕的直线集合，如下图所示。<b>m</b>的作用就是唯一能确定一条线段垂线方向与其相同，且离原点距离为|<b>m</b>|。这样空间中的直线就能被唯一确定下来。<br>
