@@ -21,7 +21,7 @@ tags:
 # 正文
 
 首先来理解下点在齐次坐标系下的直观意义。将三维退化为二维更好理解。<br>
-![点的齐次理解](/img/in-post/plucker/post-plucker-point.jpg)<br>
+<div align=center><img src = "/img/in-post/plucker/post-plucker-point.jpg"></div><br>
 如上图所示，图中的点是线和平面的交点，换种思想就是说线上的所有点沿着线的方向进行投影，得到的永远是图中所示的点，则这条线就是这个点的齐次方程，齐次的w是投影长度。
 
 同样我们表示一个三维点在普吕克坐标系下为表示为<center>(x<sup>0</sup>:x<sup>1</sup>:x<sup>2</sup>:x<sup>3</sup>)</center>
