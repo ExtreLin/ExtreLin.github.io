@@ -7,7 +7,7 @@ header-img: "img/post-plucker-bg.jpg"
 catalog: true
 tags:
     - 数学 
-    - 几何
+    - 算法
 ---
 
 > “抛开常见的三维坐标系. ”
