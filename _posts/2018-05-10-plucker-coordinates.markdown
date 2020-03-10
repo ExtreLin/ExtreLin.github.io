@@ -36,7 +36,7 @@ x<sup>0</sup>为齐次坐标，x<sup>1</sup>，x<sup>2</sup>，x<sup>3</sup>分�
 <center>(p<sup>01</sup>:p<sup>02</sup>:p<sup>03</sup>:p<sup>23</sup>:p<sup>31</sup>:p<sup>13</sup>)</center>
 
 p<sup>01</sup>,p<sup>02</sup>...之类的怎么来的呢？假设这条线段上面有两个点(x<sup>0</sup>:x<sup>1</sup>:x<sup>2</sup>:x<sup>3</sup>)和(y<sup>0</sup>:y<sup>1</sup>:y<sup>2</sup>:y<sup>3</sup>)，我们将以下面的规则定义p<sup>ij</sup>:<br>
-![](http://latex.codecogs.com/gif.latex?\\\p_{ij}=\begin{vmatrix}x_{i}&y_{i}\\\x_{j}&y_{j}\end{vmatrix}=x_{i}y_{j}-x_{j}y_{i})<br>
+![](http://latex.codecogs.com/gif.latex?\\p_{ij}=\begin{vmatrix}x_{i}&y_{i}\\x_{j}&y_{j}\end{vmatrix}=x_{i}y_{j}-x_{j}y_{i})<br>
 
 为什么只取这6个数呢？因为p<sup>ii</sup> = 0 并且 p<sup>ij</sup> = -p<sup>ji</sup>，所以取6个数就能代表整个矩阵。
 以两个点得出线的操作称为<b>point join point</b>。<br>
@@ -52,7 +52,7 @@ p<sup>01</sup>,p<sup>02</sup>...之类的怎么来的呢？假设这条线段上
 
 假设空间中的点坐标为(x<sup>0</sup>:x<sup>1</sup>:x<sup>2</sup>:x<sup>3</sup>)，空间中的线段的定义为如<b>point join point</b>中p<sup>ij</sup>中的定义。
 这里为了简便直接给出a<sup>i</sup>的定义：<br>
-![](http://latex.codecogs.com/gif.latex?\\sum\limits_{i=0}^{3}p^{ij}x_{i},\hspace{1cm}j=0,1,2,3)<br>
+![](http://latex.codecogs.com/gif.latex?\\\sum\limits_{i=0}^{3}p^{ij}x_{i},\hspace{1cm}j=0,1,2,3)<br>
 
 其实有平面方程的就很好理解，平面方程的系数就是上述的<b>a</b>。
 
