@@ -20,7 +20,7 @@ tags:
 
 cuda中可以注册两种形式的buffer, 一种是image类型的buffer，如renderbuffer或者texture,另一种就是vbo，vertexBufferObject。<br>
 
-贴一段完整的使用代码。
+>这是一段代码。
 
 ```cpp
 GLuint rbo,vbo;
@@ -64,6 +64,9 @@ cudaGraphicGLUnregisterImage(cudaRbo);
 cudaGraphicGLUnregisterBuffer(cudaVbo);
 
 ```
+
+
+> 总结
 
 OpenGL和CUDA的交互主要分为注册、映射、获得GPU指针、释放这几个步骤。将所对应的OpenGL资源注册到CUDA，这样OpenGL更新资源的时候CUDA得到对应的更新，然后通过map来将OpenGL资源映射到CUDA，随后做的修改都能在Unmap的时候更新到OpenGL(当然要在注册的时候指定这块资源是可读可写的才行)。<br>
 
