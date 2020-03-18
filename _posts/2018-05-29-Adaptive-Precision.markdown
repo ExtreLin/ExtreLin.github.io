@@ -81,7 +81,27 @@ else
 
 t对应计算值，x对应真值。<br>
 
-t<sub>1</sub>、t<sub>2</sub>、t<sub>3</sub>、t<sub>4</sub>误差边界计算很简单，就是加标准误差。我们计算t5<br>
+t<sub>1</sub>、t<sub>2</sub>、t<sub>3</sub>、t<sub>4</sub>误差边界计算很简单，就是加标准误差。我们计算t<sub>5<sub><br>
 
 ![](/img/in-post/errbound/2.png)
 
+同样的 t<sub>6</sub> = x<sub>6</sub> ± (3ε + 3ε<sup>2</sup>+ε<sup>3</sup>)|x<sub>6</sub>|<br>
+
+![](/img/in-post/errbound/3.jpg)
+
+![](/img/in-post/errbound/4.jpg)
+![](/img/in-post/errbound/5.jpg)
+
+上式的转换我提供了自己两种证明方式：
+![](/img/in-post/errbound/6.jpg)
+
+因为还有最后的加和乘法所以再加两个(1+ε),即(1+ε)<sup>2</sup>
+
+![](/img/in-post/errbound/7.jpg)
+
+所以很艰难的求出了误差边界。
+
+
+>有没有发现没有除法
+
+因为计算机对除法的特殊意义，所以式子中一定不能带除法！
