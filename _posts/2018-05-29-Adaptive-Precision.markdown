@@ -30,8 +30,8 @@ else
 论文《[Adaptive Precision Floating-Point Arithmetic and Fast Robust Geometric Predicates ](https://link.springer.com/article/10.1007/PL00009321)》提供了自适应精度的计算的算法。但是论文实在太难了，我只看懂了一部分，所以我只介绍里面最简单的浮点数误差边界的计算。
 
 我们定义<br>
-<center> a ⊕ b = a + b + err(a ⊕ b )</center><br>
-<center> a ⊙ b = a x b + err(a ⊙ b )</center><br>
+<center> a ⊕ b = a + b ± err(a ⊕ b )</center><br>
+<center> a ⊙ b = a x b ± err(a ⊙ b )</center><br>
 
 首先我们计算一个1的的误差边界，其实很简单，当在计算机中 1 + a == 1 则a就是1的误差边界,代码如下：
 
@@ -66,5 +66,26 @@ else
     gmp(a + b); //伪代码，如果不满足就使用gmp去精确计算。
 
 ```
+
+![误差边界](/img/in-post/errbound/errbound.jpg)
+
+结合代码和图，就能明白误差边界的定义，所以我们认为我们计算的数值在两侧误差边界中就表示我们计算的结果可靠。<br>
+
+>上面式子是不是太简单了？
+
+我们尝试求解一个简单的几何问题，判断点和直线的位置关系。<br>
+判断点和直线的位置关系实际就是求点和直线上的两个点组成的三角形的面积。面积为0表示点在直线上，大于0表示在直线上方，小于0表示在直线的下方。那么判断的式子如下式所示：<br>
+![](http://latex.codecogs.com/gif.latex?\\det=\left(a_{x}-c_{x}\right)\left(b_{y}-c_{y}\right)-\left(a_{y}-c_{y}\right)\left(b_{x}-c_{x}\right))<br>
+
+![](/img/in-post/errbound/1.jpg)<br>
+
+t对应计算值，x对应真值。<br>
+
+t<sub>1</sub>、t<sub>2</sub>、t<sub>3</sub>、t<sub>4</sub>误差边界计算很简单，就是加标准误差。我们计算t5<br>
+
+![](http://latex.codecogs.com/gif.latex?\\t_{5}=t_{1}t_{2}=\left(x_{1}\pm\epsilon\left|x_{1}\right|\right)\left(x_{2}\pm\epsilon\left|x_{2}\right|\right))<br>
+![](http://latex.codecogs.com/gif.latex?\\=x_{1}x_{2}\pm\left(2\epsilon+\epsilon^{2}\right)\left|x_{1}x_{2}\right|)<br>
+
+
 
 
