@@ -83,12 +83,5 @@ t对应计算值，x对应真值。<br>
 
 t<sub>1</sub>、t<sub>2</sub>、t<sub>3</sub>、t<sub>4</sub>误差边界计算很简单，就是加标准误差。我们计算t5<br>
 
-![](http://latex.codecogs.com/gif.latex?\\t_{5}=t_{1}t_{2})
+![](/img/in-post/errbound/2.png)
 
-![](http://latex.codecogs.com/gif.latex?\\=(x_{1}\pm\epsilon|x_{1}|)(x_{2}\pm\epsilon|x_{2}|))
-
-![](http://latex.codecogs.com/gif.latex?\\=x_{1}x_{2}\pm\left(2\epsilon+\epsilon^{2}\right)\left|x_{1}x_{2}\right|)
-
-![](http://latex.codecogs.com/gif.latex?\\=x_{5}\pm\epsilon\left|x_{5}\right|+\left(2\epsilon+\epsilon^2\right)\left(\left|x_{5}\right|\pm\epsilon\left|x_{5}\right|\right))
-
-![](http://latex.codecogs.com/gif.latex?\\=x_{5}\pm(3\epsilon+3\epsilon^2+\epsilon^3)|x_{5}|)
