@@ -85,7 +85,7 @@ t<sub>1</sub>、t<sub>2</sub>、t<sub>3</sub>、t<sub>4</sub>误差边界计算�
 
 ![](/img/in-post/errbound/2.png)
 
-同样的 t<sub>6</sub> = x<sub>6</sub> ± (3ε + 3ε<sup>2</sup>+ε<sup>3</sup>)|x<sub>6</sub>|<br>
+同样的 t<sub>6</sub> = x<sub>6</sub> ± (3ε + 3ε<sup>2</sup>+ε<sup>3</sup>)&#124;x<sub>6</sub>&#124;<br>
 
 ![](/img/in-post/errbound/3.jpg)
 
