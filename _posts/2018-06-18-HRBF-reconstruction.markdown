@@ -11,6 +11,6 @@ tags:
     - 算法
 ---
 
-[HRBF](http://rodolphe-vaillant.fr/?e=12)([download]()])
+[HRBF](http://rodolphe-vaillant.fr/?e=12)([code]())
 
 
