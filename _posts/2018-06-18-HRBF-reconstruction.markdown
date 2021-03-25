@@ -11,6 +11,6 @@ tags:
     - 算法
 ---
 
-[HRBF](http://rodolphe-vaillant.fr/?e=12)([code]())
+[Recipe for implicit surface reconstruction with HRBF](http://rodolphe-vaillant.fr/?e=12) ([code](https://github.com/ExtreLin/ExtreLin.github.io/raw/master/downloadfile/hrbf_code.zip))
 
 
